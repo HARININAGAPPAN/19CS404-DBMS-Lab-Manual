@@ -219,7 +219,7 @@ The program should display employee names with their department numbers or the a
 - Declare a cursor using `%ROWTYPE` to fetch complete rows from the `employees` table.
 - Implement exception handling to catch the relevant exceptions and display appropriate messages.
   # program
-  ```
+````
   DECLARE
    CURSOR emp_cur IS SELECT * FROM employees;
    emp_rec employees%ROWTYPE;
@@ -243,7 +243,7 @@ EXCEPTION
    WHEN OTHERS THEN
       DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
 END;
-```
+````
 **Output:**  
 The program should display employee records or the appropriate error message if no data is found.
 <img width="428" height="72" alt="image" src="https://github.com/user-attachments/assets/f97dea8d-3206-4194-a3ab-fdf3786943b7" />
